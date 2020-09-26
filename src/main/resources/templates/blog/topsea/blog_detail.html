@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<div th:replace="~{blog/topsea/commons :: topsea_head}">
+</div>
+<body>
+<!--PRELOADER-->
+<div th:replace="~{blog/topsea/commons :: the_preloader}"></div>
+<!--/.PRELOADER END-->
+
+<!--HEADER -->
+<div th:replace="~{blog/topsea/commons :: the_header}">
+</div>
+<!--/.HEADER END-->
+
+<!--CONTENT WRAP-->
+<div class="content-wrap">
+    <!--CONTENT-->
+    <div class="content">
+        <div class="col-lg-12">
+            <div class="card mb-4 py-3 border-bottom-info">
+                    <!--BLOG-->
+                    <section class="grey-bg mar-tm-10" id="work">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <h1 class="title-small-center">
+                                        <h1 th:text="${blog_title}">住院管理子系统</h1>
+                                    </h1>
+                                    <p class="content-detail" th:utext="${blog_tags}">
+                                    </p>
+                                </div>
+                                <p class="col-md-9 content-right" th:utext="${blog_content}">
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+            </div>
+        </div>
+        <!--/.BLOG END-->
+
+
+        <!--CONTACT-->
+        <div th:replace="~{blog/topsea/commons :: the_contact}"></div>
+        <!--/.CONTACT END-->
+
+        <!--FOOTER-->
+        <div th:replace="~{blog/topsea/commons :: the_footer}"></div>
+        <!--/.FOOTER-END-->
+
+        <!--/.CONTENT END-->
+    </div>
+    <!--/.CONTENT-WRAP END-->
+</div>
+
+<script src="js/jquery-1.9.1.min.js" th:src="@{/blog/topsea/js/jquery-1.9.1.min.js}" type="text/javascript"></script>
+<script src="js/jquery.appear.js" th:src="@{/blog/topsea/js/jquery.appear.js}" type="text/javascript"></script>
+<script src="js/bootstrap.min.js" th:src="@{/blog/topsea/js/bootstrap.min.js}" type="text/javascript"></script>
+<script src="js/classie.js" th:src="@{/blog/topsea/js/classie.js}" type="text/javascript"></script>
+<script src="js/owl.carousel.min.js" th:src="@{/blog/topsea/js/owl.carousel.min.js}" type="text/javascript"></script>
+<script src="js/jquery.magnific-popup.min.js" th:src="@{/blog/topsea/js/jquery.magnific-popup.min.js}"
+        type="text/javascript"></script>
+<script src="js/masonry.pkgd.min.js" th:src="@{/blog/topsea/js/masonry.pkgd.min.js}" type="text/javascript"></script>
+<script src="js/masonry.js" th:src="@{/blog/topsea/js/masonry.js}" type="text/javascript"></script>
+<script src="js/smooth-scroll.min.js" th:src="@{/blog/topsea/js/smooth-scroll.min.js}" type="text/javascript"></script>
+<script src="js/typed.js" th:src="@{/blog/topsea/js/typed.js}" type="text/javascript"></script>
+<script src="js/main.js" th:src="@{/blog/topsea/js/main.js}" type="text/javascript"></script>
+</body>
+</html>

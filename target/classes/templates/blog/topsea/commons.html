@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<!-- 公共部分抽取-->
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="topsea_head">
+    <meta charset="utf-8">
+    <title>TopSea</title>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="Bodo - Simple One Page Personal" name="description">
+    <meta content="BdgPixel" name="author">
+    <!--Fav-->
+    <link href="images/favicon.ico" th:href="@{/blog/topsea/images/favicon.png}" rel="shortcut icon">
+
+    <!--styles-->
+    <link href="css/bootstrap.min.css" th:href="@{/blog/topsea/css/bootstrap.min.css}" rel="stylesheet">
+    <link href="css/owl.carousel.css" th:href="@{/blog/topsea/css/owl.carousel.css}" rel="stylesheet">
+    <link href="css/owl.theme.css" th:href="@{/blog/topsea/css/owl.theme.css}" rel="stylesheet">
+    <link href="css/magnific-popup.css" th:href="@{/blog/topsea/css/magnific-popup.css}" rel="stylesheet">
+    <link href="css/style.css" th:href="@{/blog/topsea/css/style.css}" rel="stylesheet">
+    <link href="css/responsive.css" th:href="@{/blog/topsea/css/responsive.css}" rel="stylesheet">
+
+    <!--fonts google-->
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
+
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="js/html5shiv.min.js" ></script>
+    <![endif]-->
+</head>
+<body>
+<!--PRELOADER-->
+<div id="preloader" th:fragment="the_preloader">
+    <div id="status">
+        <img alt="logo" src="images/logo-big.png" th:src="@{/blog/topsea/images/logo-big.png}">
+    </div>
+</div>
+<!--/.PRELOADER END-->
+
+<!--HEADER -->
+<div class="header" id="head" th:fragment="the_header">
+    <div class="for-sticky">
+        <!--LOGO-->
+        <div class="col-md-2 col-xs-6 logo">
+            <a href="resume.html"><img alt="logo" class="logo-nav" src="images/logo.png" th:src="@{/blog/topsea/images/logo.png}"></a>
+        </div>
+        <!--/.LOGO END-->
+    </div>
+    <div class="menu-wrap">
+        <nav class="menu">
+            <div class="menu-list">
+                <a data-scroll="" href="#home" th:href="@{/blog_detail#home}" class="active">
+                    <span>主页</span>
+                </a>
+                <a data-scroll="" href="#about" th:href="@{/blog_detail#about}">
+                    <span>关于</span>
+                </a>
+                <a data-scroll="" href="#work" th:href="@{/blog_detail#work}">
+                    <span>项目</span>
+                </a>
+                <a data-scroll="" href="#services" th:href="@{/blog_detail#services}">
+                    <span>自我评价</span>
+                </a>
+                <a data-scroll="" href="#employement" th:href="@{/blog_detail#employement}">
+                    <span>工作经历</span>
+                </a>
+                <a data-scroll="" href="#skill" th:href="@{/blog_detail#skill}">
+                    <span>专业技能</span>
+                </a>
+                <a data-scroll="" href="#education" th:href="@{/blog_detail#education}">
+                    <span>教育经历</span>
+                </a>
+                <a data-scroll="" href="#testimonial" th:href="@{/blog_detail#testimonial}">
+                    <span>视频演示</span>
+                </a>
+                <a data-scroll="" href="#blog" th:href="@{/blog_detail#blog}">
+                    <span>我的博客</span>
+                </a>
+                <a data-scroll="" href="#contact">
+                    <span>联系我</span>
+                </a>
+            </div>
+        </nav>
+        <button class="close-button" id="close-button">关闭菜单</button>
+    </div>
+    <button class="menu-button" id="open-button">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button><!--/.for-sticky-->
+</div>
+<!--/.HEADER END-->
+
+<!--CONTACT-->
+<section id="contact" class="white-bg" th:fragment="the_contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <h3 class="title-small">
+                    <span>联系我</span>
+                </h3>
+                <p class="content-detail">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                </p>
+
+            </div>
+            <div class="col-md-9 content-right">
+                <form>
+                    <div class="group">
+                        <input required="" type="text"><span class="highlight"></span><span class="bar"></span><label>您的名字</label>
+                    </div>
+                    <div class="group">
+                        <input required="" type="email"><span class="highlight"></span><span class="bar"></span><label>您的邮箱</label>
+                    </div>
+                    <div class="group">
+                        <textarea required=""></textarea><span class="highlight"></span><span class="bar"></span><label>内容</label>
+                    </div>
+                    <input id="sendMessage" name="sendMessage" type="submit" value="发送">
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<!--/.CONTACT END-->
+
+<!--FOOTER-->
+<footer th:fragment="the_footer">
+    <div class="footer-top">
+        <ul class="socials">
+            <li class="facebook">
+                <a href="https://space.bilibili.com/307219768" target="_blank" data-hover="bilibili">bilibili</a>
+            </li>
+            <li class="twitter">
+                <a href="https://gitee.com/topsea" target="_blank" data-hover="gitee">gitee</a>
+            </li>
+            <li class="gplus">
+                <a href="https://github.com/TopSea" target="_blank" data-hover="GitHub">GitHub</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row">
+                <a th:href="@{#head}">
+                    <img th:src="@{/blog/topsea/images/rocket.png}" src="images/logo-bottom.png" alt="logo bottom" class="center-block" />
+                </a>
+                Copyright &copy; 2017.Company name All rights reserved.<a target="_blank" href="http://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--/.FOOTER-END-->
+</body>
+</html>
